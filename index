@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到XHR工作室首页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header #branding h1 a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 26px;
+        }
+        header #branding h1 a img {
+            width: 50px;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+            background: #ffffff;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="#">XHR工作室欢迎您</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about-us.html">关于我们</a></li>
+                    <li><a href="https://space.bilibili.com/2026063517?spm_id_from=333.1007.0.0">作者哔哩哔哩</a></li>
+                    <li><a href="https://qm.qq.com/q/FZ2ezrspQk">我们的工作室</a></li>
+                    <li><a href="2159547892">作者qq</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <h2>欢迎来到我们的网站</h2>
+            <p>这是一个示例网页，XHR工作室网页测试用的。</p>
+            <img src="https://via.placeholder.com/600x300" alt="示例图片">
+        </div>
+    </section>
+
+    <footer>
+        <p>版权所有 &copy; 2025 XHR工作室保留所有权利</p>
+    </footer>
+</body>
+</html>
