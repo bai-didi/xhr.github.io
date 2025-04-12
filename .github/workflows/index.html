@@ -5,23 +5,33 @@
     <title>欢迎来到XHR工作室首页</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Minecraftia', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #333333;
+            color: #ffffff;
+        }
+        @font-face {
+            font-family: 'Minecraftia';
+            src: url('https://fonts.cdnfonts.com/s/10318/Minecraftia.woff') format('woff');
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header {
-            background: #35424a;
+            background: #444444;
             color: #ffffff;
-            padding-top: 30px;
+            padding: 20px 0;
             min-height: 70px;
             border-bottom: #e8491d 3px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         header a {
             color: #ffffff;
@@ -32,13 +42,10 @@
         header ul {
             padding: 0;
             list-style: none;
+            display: flex;
         }
         header ul li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
+            padding: 0 15px;
         }
         header #branding h1 {
             margin: 0;
@@ -52,23 +59,77 @@
         header #branding h1 a img {
             width: 50px;
             height: auto;
+            vertical-align: middle;
         }
         .content {
-            padding: 20px;
-            background: #ffffff;
+            padding: 40px 20px;
+            background: #555555;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid #444444;
         }
         .content img {
             max-width: 100%;
             height: auto;
+            margin-top: 20px;
+            border: 1px solid #444444;
+        }
+        .about-us {
+            padding: 40px 20px;
+            background: #555555;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid #444444;
+        }
+        .about-us h2 {
+            margin-bottom: 20px;
+        }
+        .about-us p {
+            line-height: 1.6;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 20px 0;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
         footer {
-            background: #35424a;
+            background: #444444;
             color: #ffffff;
             text-align: center;
             padding: 10px;
             position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: 20px;
+            border-top: 1px solid #555555;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            header ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            header ul li {
+                padding: 10px 0;
+            }
         }
     </style>
 </head>
@@ -76,11 +137,11 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1><a href="#">XHR工作室欢迎您</a></h1>
+                <h1><a href="#"><img src="path/to/your/logo.png" alt="XHR工作室">XHR工作室欢迎您</a></h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href=".github/workflows/about-us.html">关于我们</a></li>
+                    <li><a href="#about-us">关于我们</a></li>
                     <li><a href="https://space.bilibili.com/2026063517?spm_id_from=333.1007.0.0">作者哔哩哔哩</a></li>
                     <li><a href="https://qm.qq.com/q/FZ2ezrspQk">我们的工作室</a></li>
                     <li><a href="./qq.html">作者qq</a></li>
@@ -91,9 +152,19 @@
 
     <section class="content">
         <div class="container">
-            <h2>欢迎来到XHR工作室首页目前这个网站还在测试</h2>
-            <p>这是一个示例网页，XHR工作室网页测试用的。</p>
-            <img src="https://www.bilibili.com/video/BV19KQEYGEYc?vd_source=5f422a08db4d4ca6dcd3c7466f7b3f4e" alt="示例图片">
+            <h2>欢迎来到XHR工作室首页</h2>
+            <p>目前这个网站还在测试。这是一个示例网页，XHR工作室网页测试用的。</p>
+            <div class="video-container">
+                <iframe src="https://player.bilibili.com/player.html?bvid=BV19KQEYGEYc&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <h2>关于我们</h2>
+            <p>XHR工作室成立于2023年，致力于提供高质量的游戏开发和设计服务。我们的团队由一群热爱游戏的开发者组成，专注于创造独特的游戏体验。</p>
+            <p>我们相信，游戏不仅仅是娱乐，更是一种艺术形式。通过我们的努力，希望能够为玩家带来更多的欢乐和惊喜。</p>
         </div>
     </section>
 
